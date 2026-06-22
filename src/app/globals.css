@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #ff385c;
+  --color-primary-active: #e00b41;
+  --color-ink: #222222;
+  --color-muted: #6a6a6a;
+  --color-surface: #f7f7f7;
+  --color-hairline: #dddddd;
+
+  --color-buttonStroke: #dedede;
+
+  --color-semiText: #6b6b6b;
+}
+
+@layer utilities {
+  .btn-secondary {
+    @apply text-sm font-medium border border-buttonStroke bg-white shadow-xl rounded-full text-semiText transition cursor-pointer;
+  }
+  .btn-secondary:hover {
+    @apply text-black bg-slate-50;
+  }
+
+  .btn-selector {
+    @apply text-sm font-medium border border-buttonStroke  rounded-full text-semiText transition cursor-pointer;
+  }
+  .btn-selector:active {
+    @apply text-black bg-white border-1 border-slate-500;
+  }
+
+  .btn-clicked {
+    @apply bg-white;
+  }
+  .btn-clicked:hover {
+    @apply text-black bg-slate-200;
+  }
+}
