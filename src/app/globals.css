@@ -20,6 +20,12 @@
   .btn-secondary:hover {
     @apply text-black bg-slate-50;
   }
+  .btn-third {
+    @apply text-sm font-bold border border-buttonStroke bg-white shadow-xl rounded-full text-primary transition cursor-pointer;
+  }
+  .btn-third:hover {
+    @apply text-primary/80 bg-slate-50;
+  }
 
   .btn-selector {
     @apply text-sm font-medium border border-buttonStroke  rounded-full text-semiText transition cursor-pointer;
@@ -33,5 +39,21 @@
   }
   .btn-clicked:hover {
     @apply text-black bg-slate-200;
+  }
+
+  .section-wrapper {
+    @apply px-8 py-6 relative w-full;
+  }
+
+  .head {
+    @apply text-ink font-bold text-xl;
+  }
+
+  .para {
+    @apply text-semiText text-sm;
+  }
+
+  .footer-linkhead{
+    @apply font-bold text-ink;
   }
 }

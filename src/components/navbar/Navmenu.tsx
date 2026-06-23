@@ -23,26 +23,26 @@ const Navmenu = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-12 right-0 z-10 flex min-w-48 flex-col gap-1 rounded-xl border border-hairline bg-white p-2 shadow-[0_10px_24px_rgba(0,0,0,0.12)]">
-            <Link
-              className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
-              href="/host"
-            >
-              Become a Host
-            </Link>
-            <Link
-              className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
-              href="/login"
-            >
-              Login / Sign up
-            </Link>
-            <Link
-              className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
-              href="/help"
-            >
-              Help Center
-            </Link>
-          </div>
+        <div className="absolute top-12 right-0 z-10 flex min-w-48 flex-col gap-1 rounded-xl border border-hairline bg-white p-2 shadow-[0_10px_24px_rgba(0,0,0,0.12)] z-100">
+          <Link
+            className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
+            href="/host"
+          >
+            Become a Host
+          </Link>
+          <Link
+            className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
+            href="/login"
+          >
+            Login / Sign up
+          </Link>
+          <Link
+            className="rounded-lg px-4 py-2.5 text-sm font-medium text-ink hover:bg-surface"
+            href="/help"
+          >
+            Help Center
+          </Link>
+        </div>
       )}
     </div>
   );
