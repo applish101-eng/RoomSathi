@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { RegisterModal } from "@/models/RegisterModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col items-center" suppressHydrationWarning>
-        <div className="w-full max-w-[100rem] mx-auto min-h-screen">{children}</div>
+        <div className="w-full max-w-[100rem] mx-auto min-h-screen">
+          {children}
+          <RegisterModal />
+        </div>
       </body>
     </html>
   );
